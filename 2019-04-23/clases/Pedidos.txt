@@ -1,0 +1,1 @@
+[{"producto":"ALFAJOR","cantidad":"10","idProveedor":"2"},{"producto":"CARAMELO","cantidad":"50","idProveedor":"1"}]
