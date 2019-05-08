@@ -1,0 +1,342 @@
+{
+	"id": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+	"name": "EXAMEN",
+	"description": "",
+	"order": [
+		"036f716d-d557-d89e-65fc-3a85709e4880",
+		"20a3da1d-67b4-320e-718e-b146b3a1d10b",
+		"14fb280f-42e8-58d1-8c71-25de3198dd27",
+		"4ad05833-4f87-99d8-540f-1f4fe1d4d66f",
+		"309eb3f1-8fae-1286-c3e3-2f9b4343e5e1",
+		"ed1e70af-0eaa-6f58-97ae-d65eb7de287f",
+		"357cab8a-3dcd-ff25-622f-76e8b0d486dc"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1557268766296,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "036f716d-d557-d89e-65fc-3a85709e4880",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php",
+			"queryParams": [
+				{
+					"key": "caso",
+					"value": "crearUsuario",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Macrena",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "clave",
+					"value": "12345",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "caso",
+					"value": "crearUsuario",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557269983259,
+			"name": "PUNTO 1",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		},
+		{
+			"id": "14fb280f-42e8-58d1-8c71-25de3198dd27",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php?caso=listarUsuarios&nombre=lea",
+			"queryParams": [
+				{
+					"key": "caso",
+					"value": "listarUsuarios",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "lea",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"data": null,
+			"dataMode": "params",
+			"name": "PUNTO 3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1557269981555,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "20a3da1d-67b4-320e-718e-b146b3a1d10b",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "caso",
+					"value": "login",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "leandro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "clave",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557268811300,
+			"name": "PUNTO 2",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		},
+		{
+			"id": "309eb3f1-8fae-1286-c3e3-2f9b4343e5e1",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php?caso=listarProductos",
+			"queryParams": [
+				{
+					"key": "caso",
+					"value": "listarProductos",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557271255684,
+			"name": "PUNTO 4 BIS",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		},
+		{
+			"id": "357cab8a-3dcd-ff25-622f-76e8b0d486dc",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "caso",
+					"value": "modificarProducto",
+					"description": ""
+				},
+				{
+					"key": "id",
+					"value": "1",
+					"description": ""
+				},
+				{
+					"key": "nombre",
+					"value": "Alfajor",
+					"description": ""
+				},
+				{
+					"key": "precio",
+					"value": "15",
+					"description": ""
+				},
+				{
+					"key": "usuarioCarga",
+					"value": "macarena",
+					"description": ""
+				},
+				{
+					"key": "foto",
+					"value": "ALFAJOR MODIFICADO.jpg",
+					"description": "",
+					"type": "file"
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557272783113,
+			"name": "PUNTO 6",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		},
+		{
+			"id": "4ad05833-4f87-99d8-540f-1f4fe1d4d66f",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "caso",
+					"value": "cargarProducto",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "GALLETA",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "precio",
+					"value": "25",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioCarga",
+					"value": "macarena",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "foto",
+					"value": "alfajor.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557271820660,
+			"name": "PUNTO 4",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		},
+		{
+			"id": "ed1e70af-0eaa-6f58-97ae-d65eb7de287f",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/examen\\Entregar/nexo.php?caso=listarProductos&criterio=usuario&valor=macarena",
+			"queryParams": [
+				{
+					"key": "caso",
+					"value": "listarProductos",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "criterio",
+					"value": "usuario",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "valor",
+					"value": "macarena",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557271906135,
+			"name": "PUNTO 5",
+			"description": "",
+			"collectionId": "b3337fa8-d42a-ce2c-b58c-b26fd457619f",
+			"responses": []
+		}
+	]
+}
