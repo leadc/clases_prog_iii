@@ -103,7 +103,11 @@
                     array_push($lista,$value);
                 }
             }
-            echo json_encode($lista);
+            if(count($lista) > 0){
+                return json_encode($lista);
+            }else{
+                return "No existe ".$_GET["nombre"];
+            }
         }
        
     }
