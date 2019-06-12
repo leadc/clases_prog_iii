@@ -68,12 +68,17 @@ class ComposerStaticInitc13fa76394bf8f5bd77e0fd6d35a4c87
         ),
     );
 
+    public static $classMap = array (
+        'API\\API' => __DIR__ . '/../..' . '/src/API/API.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc13fa76394bf8f5bd77e0fd6d35a4c87::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc13fa76394bf8f5bd77e0fd6d35a4c87::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitc13fa76394bf8f5bd77e0fd6d35a4c87::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc13fa76394bf8f5bd77e0fd6d35a4c87::$classMap;
 
         }, null, ClassLoader::class);
     }
