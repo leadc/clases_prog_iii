@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.12",
+        "firebase/php-jwt": "^5.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
