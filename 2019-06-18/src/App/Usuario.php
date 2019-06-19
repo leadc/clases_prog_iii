@@ -52,6 +52,28 @@
         }
 
         /**
+         * Verifica el login segùn los datos pasados por parámetro
+         * Devuelve al usuario o lanza excepciones con mensajes correspondientes
+         */
+        public static function DoLogin($nombre, $sexo, $clave){
+            $usuario = self::GetUsuarioPorNombre($nombre);
+            
+            if($usuario === false){
+                throw new \Exception("El nombre de usuario no existe");
+            }
+
+            if($usuario->sexo != $sexo){
+                throw new \Exception("El sexo seleccionado es incorrecto");
+            }
+
+            if($usuario->clave != $clave){
+                throw new \Exception("Clave de usuario incorrecta");
+            }
+
+            return $usuario;
+        }
+
+        /**
          * Devuelve un usuario buscàndolo por nombre o false en caso de no encontrar coincidencias
          */
         public static function GetUsuarioPorNombre($nombre){

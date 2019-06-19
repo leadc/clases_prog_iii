@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'API\\API' => $baseDir . '/src/API/API.php',
+    'App\\JWTClass' => $baseDir . '/src/App/JWTClass.php',
     'App\\Usuario' => $baseDir . '/src/App/Usuario.php',
     'BasicORM\\BORMConnections\\ConnectionClass' => $baseDir . '/src/BORM/BORMConnections/ConnectionClass.php',
     'BasicORM\\BORMConnections\\DB' => $baseDir . '/src/BORM/BORMConnections/DB.php',

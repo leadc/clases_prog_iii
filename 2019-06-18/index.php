@@ -2,6 +2,7 @@
 
     use \Slim\App as Slim;
     use \API\API;
+    use \Middleware\JWTMiddleware;
 
     require_once 'vendor/autoload.php';
     //require_once 'src/API/API.php';
@@ -11,9 +12,17 @@
 
     $app = new Slim(["settings" => $config]);
 
-    $app->post("/usuario[/]", API::class.":AltaUsuario");
-    $app->post("/jwt/VerificarToken[/]", API::class.":VerifyToken");
+    /**
+     * Login de usuario
+     */
+    $app->post("/login[/]", API::class.":LoginUsuario")->add(JWTMiddleware::class.":AccesoLogin");
 
+    /**
+     * Alta de usuario
+     */
+    $app->post("/usuario[/]", API::class.":AltaUsuario")->add(JWTMiddleware::class.":AccesoGeneral");
+    
+    
     $app->run();
 ?>
     

@@ -70,6 +70,7 @@ class ComposerStaticInit18b52ad7241d08689826b0dde7fd6027
 
     public static $classMap = array (
         'API\\API' => __DIR__ . '/../..' . '/src/API/API.php',
+        'App\\JWTClass' => __DIR__ . '/../..' . '/src/App/JWTClass.php',
         'App\\Usuario' => __DIR__ . '/../..' . '/src/App/Usuario.php',
         'BasicORM\\BORMConnections\\ConnectionClass' => __DIR__ . '/../..' . '/src/BORM/BORMConnections/ConnectionClass.php',
         'BasicORM\\BORMConnections\\DB' => __DIR__ . '/../..' . '/src/BORM/BORMConnections/DB.php',

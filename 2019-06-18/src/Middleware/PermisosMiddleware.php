@@ -8,10 +8,9 @@
     class JWTMiddleware{
 
         /**
-         * Middleware para controlar el acceso al login 
-         * Si la respuesta es correcta agrega el token a la misma o devuelve el mensaje de error
+         * Valida el acceso solo a administradores
          */
-        public static function AccesoLogin($request,$response, $next){
+        public static function AccesoAdministradores($request,$response, $next){
             
             // Valido el usuario con el método de validación de la API
             $newResponse = $next($request, $response);
