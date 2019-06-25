@@ -184,7 +184,7 @@
                 }
             }
             $sql = \utf8_decode($sql." ($insertFields) VALUES ($fieldValues)");
-            Log::WriteLog(MAIN_LOG, [get_class($this)." SQL INSERT: $sql"]);
+            //Log::WriteLog(MAIN_LOG, [get_class($this)." SQL INSERT: $sql"]);
             // Executes the statement
             $connectionClassName = self::$ORMConnections.$this->mapping->dbConnectionClass;
             $result = $connectionClassName::ExecNonQuery($sql);

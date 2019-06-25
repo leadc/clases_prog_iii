@@ -2,6 +2,7 @@
     namespace App;
     use BasicORM\BORMEntities\BORMObject;
     use BasicORM\BORMEntities\BORMObjectInterface;
+    use BasicORM\LOGS\Log;
 
     /**
      * Clase para el manejo de usuarios
@@ -18,6 +19,11 @@
         /** Perfil del usuario */
         public $perfil;
 
+        /** Perfil de administrador */
+        const PERFIL_ADMINISTRADOR = "administrador";
+        /** Perfil de usuario general */
+        const PERFIL_USUARIO = "usuario";
+
         
         function __construct(){
             $mappingString = '{ 
@@ -32,6 +38,15 @@
                 }
             }';
             parent::__construct(json_decode($mappingString));
+        }
+
+        /**
+         * Devuevlve true o false para indicar si existen administradores dados de alta en el sistema
+         */
+        public static function HayAdministradores(){
+            $usuario = new Usuario();
+            $result = (new Usuario())->FindBy(["perfil = '".USUARIO::PERFIL_ADMINISTRADOR."'"]);
+            return (count($result) > 0);
         }
 
         /**
@@ -83,6 +98,13 @@
                 return $res[0];
             }
             return false;
+        }
+
+        /**
+         * Devuelve un array de usuarios ordenados por nombre
+         */
+        public static function ListarUsuarios(){
+            return (new Usuario)->FindBy([],["nombre asc"]);
         }
 
          /**

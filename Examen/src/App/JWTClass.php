@@ -8,10 +8,12 @@
      */
     class JWTClass{
 
+        // TOKEN DE PRUEBA ADMINISTRADOR eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE0MzM3NDMsImV4cCI6MTU2NDAyNTc0MywidXN1YXJpbyI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW4iLCJzZXhvIjoiZmVtZW5pbm8iLCJwZXJmaWwiOiJhZG1pbmlzdHJhZG9yIn19.CNa8vj7jr5PRxx3G3fzSFeNudHET1lSCEGt1QN2QvE8
+        // TOKEN DE PRUEBA USUARIO eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE0MzM3ODIsImV4cCI6MTU2NDAyNTc4MiwidXN1YXJpbyI6eyJpZCI6Miwibm9tYnJlIjoibGVhbmRybyIsInNleG8iOiJtYXNjdWxpbm8iLCJwZXJmaWwiOiJ1c3VhcmlvIn19.RbIFF67BlDXzTSVfIZMVLGnoQrZ3j7pb3In564zb2Rs
         /** Clave secreta para codificar la firma de los token */
         private static $secret = "S3kr3t$";
         /** Tiempo en segundos para que expiren los token generados */
-        private static $secondsExp = 3600;
+        private static $secondsExp = 60*60*24*30;
 
         /**
          * Crea un token con incluyendo los datos del usuario pasado por paràmetro

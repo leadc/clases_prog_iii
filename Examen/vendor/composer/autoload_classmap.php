@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'API\\API' => $baseDir . '/src/API/API.php',
+    'App\\AccesoLog' => $baseDir . '/src/App/AccesoLog.php',
+    'App\\Compra' => $baseDir . '/src/App/Compra.php',
     'App\\JWTClass' => $baseDir . '/src/App/JWTClass.php',
     'App\\Usuario' => $baseDir . '/src/App/Usuario.php',
     'BasicORM\\BORMConnections\\ConnectionClass' => $baseDir . '/src/BORM/BORMConnections/ConnectionClass.php',
@@ -16,4 +18,5 @@ return array(
     'BasicORM\\BORMEntities\\BORMObjectInterface' => $baseDir . '/src/BORM/BORMEntities/BORMObjectInterface.php',
     'BasicORM\\LOGS\\Log' => $baseDir . '/src/BORM/LOGS/Log.php',
     'Middleware\\JWTMiddleware' => $baseDir . '/src/Middleware/JWTMiddleware.php',
+    'Middleware\\PermisosMiddleware' => $baseDir . '/src/Middleware/PermisosMiddleware.php',
 );

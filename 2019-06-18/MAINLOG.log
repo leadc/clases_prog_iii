@@ -1,6 +1,0 @@
-2019-06-18 20:40:24: App\Usuario SQL INSERT: INSERT INTO usuarios (clave, perfil, sexo) VALUES ('admin', 'usuario', 'femenino')
-2019-06-18 20:40:59: App\Usuario SQL INSERT: INSERT INTO usuarios (clave, perfil, sexo) VALUES ('admin', 'usuario', 'femenino')
-2019-06-18 20:41:47: App\Usuario SQL INSERT: INSERT INTO usuarios (nombre, clave, perfil, sexo) VALUES ('admin', 'admin', 'usuario', 'femenino')
-2019-06-18 20:43:35: App\Usuario SQL INSERT: INSERT INTO usuarios (nombre, clave, perfil, sexo) VALUES ('admin', 'admin', 'admin', 'femenino')
-2019-06-18 20:52:11: App\Usuario SQL INSERT: INSERT INTO usuarios (nombre, clave, perfil, sexo) VALUES ('admin2', 'admin', 'admin', 'femenino')
-2019-06-18 21:42:05: App\Usuario SQL INSERT: INSERT INTO usuarios (nombre, clave, perfil, sexo) VALUES ('admin3', 'admin', 'admin', 'masculino')

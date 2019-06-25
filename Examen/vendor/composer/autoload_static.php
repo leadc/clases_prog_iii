@@ -70,6 +70,8 @@ class ComposerStaticInit18b52ad7241d08689826b0dde7fd6027
 
     public static $classMap = array (
         'API\\API' => __DIR__ . '/../..' . '/src/API/API.php',
+        'App\\AccesoLog' => __DIR__ . '/../..' . '/src/App/AccesoLog.php',
+        'App\\Compra' => __DIR__ . '/../..' . '/src/App/Compra.php',
         'App\\JWTClass' => __DIR__ . '/../..' . '/src/App/JWTClass.php',
         'App\\Usuario' => __DIR__ . '/../..' . '/src/App/Usuario.php',
         'BasicORM\\BORMConnections\\ConnectionClass' => __DIR__ . '/../..' . '/src/BORM/BORMConnections/ConnectionClass.php',
@@ -79,6 +81,7 @@ class ComposerStaticInit18b52ad7241d08689826b0dde7fd6027
         'BasicORM\\BORMEntities\\BORMObjectInterface' => __DIR__ . '/../..' . '/src/BORM/BORMEntities/BORMObjectInterface.php',
         'BasicORM\\LOGS\\Log' => __DIR__ . '/../..' . '/src/BORM/LOGS/Log.php',
         'Middleware\\JWTMiddleware' => __DIR__ . '/../..' . '/src/Middleware/JWTMiddleware.php',
+        'Middleware\\PermisosMiddleware' => __DIR__ . '/../..' . '/src/Middleware/PermisosMiddleware.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
