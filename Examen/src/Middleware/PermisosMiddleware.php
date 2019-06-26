@@ -10,21 +10,21 @@
     class PermisosMiddleware{
 
         /**
-         * Valida el acceso solo a administradores
+         * Valida el acceso solo a administradores 
          */
-        public static function AccesoListaUsuarios($request,$response, $next){
+        public static function AccesoAdministradores($request,$response, $next){
             $newRespose = '';
             // Obtener token
             $token = $request->getHeader(JWTMiddleware::TOKEN_HEADER);
             // Obtener el usuario a partir del token
             $usuario = JWTClass::ObtenerUsuario($token[0]);
             // Validar que sea un administrador
-            if($usuario->perfil == Usuario::PERFIL_ADMINISTRADOR){
+            if($usuario->tipo == Usuario::TIPO_ADMINISTRADOR){
                 // Si es administrador continúo la ejecución
                 $newRespose = $next($request, $response);
             }else{
-                // Si no lo es devuelvo un Hola
-                $newRespose = $response->withJson('Hola', 401, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK);
+                // Si no devuelvo un mensaje
+                $newRespose = $response->withJson('Esta opción es solo para administradores', 401, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK);
             }
             // Devuelvo la respuesta
             return $newRespose;

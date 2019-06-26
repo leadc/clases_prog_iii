@@ -27,8 +27,8 @@
                 // Creo el token
                 $token = JWTClass::CrearToken($datos);
 
-                // Se teo el nuevo header para enviarlo 
-                $newResponse = $newResponse->withHeader(JWTMiddleware::TOKEN_HEADER, $token);
+                // Seteo el token en el body de la respuesta
+                $newResponse = $newResponse->withJson($token,200);
             }
             
             // Envío la respuesta

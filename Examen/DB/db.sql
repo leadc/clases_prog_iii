@@ -1,25 +1,25 @@
 create table usuarios(
-	id int primary key AUTO_INCREMENT,
+	legajo int primary key AUTO_INCREMENT,
     nombre varchar(50) not null,
     clave varchar(20) not null,
-    sexo varchar(10) not null,
-    perfil varchar(15) not null
+    tipo varchar(10) not null,
+    email varchar(100),
+    materiasDictadas varchar(500),
+    foto varchar(100)
 )
 
-CREATE TABLE Compras
+CREATE TABLE Materia
 (
    id          INT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-   fecha       DATETIME(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-   articulo    VARCHAR(50) NOT NULL,
-   precio      VARCHAR(20) NOT NULL,
-   idusuario int(20) not null REFERENCES usuarios(id)
+   nombre    VARCHAR(100) NOT NULL,
+   cuatrimestre int(20) NOT NULL,
+   cupos int(20) not null
 )
 
-CREATE TABLE accesosLog
+
+CREATE TABLE alumnosInscriptos
 (
-   id            INT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-   idusuario     INT(20) NOT NULL REFERENCES usuarios(id),
-   metodo        VARCHAR(50) NULL,
-   ruta          VARCHAR(80) NULL,
-   fechayhora    DATETIME(0) NOT NULL DEFAULT CURRENT_TIMESTAMP
+   id          INT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   idAlumno    INT(20) NOT NULL FOREIGN KEY REFERENCES usuarios(id),
+   idMateria int(20) NOT NULL KEY REFERENCES usuarios(id)
 )

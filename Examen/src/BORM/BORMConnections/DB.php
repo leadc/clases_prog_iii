@@ -12,7 +12,7 @@
         /**
          * DSN Connection
          */
-        protected static $dsn = 'mysql:host=localhost;dbname=clases;';
+        protected static $dsn = 'mysql:host=localhost;dbname=examen;';
         /**
          * database User
          */

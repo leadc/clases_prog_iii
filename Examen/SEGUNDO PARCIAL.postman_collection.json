@@ -1,0 +1,254 @@
+{
+	"id": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+	"name": "SEGUNDO PARCIAL",
+	"description": "",
+	"order": [
+		"6572ed17-e5e0-5b1b-2a9c-14ef7f452a52",
+		"8521a07a-1287-f881-e5e4-0debeaf3e477",
+		"366ee623-e247-661d-fcde-5de8c7137a86",
+		"67763274-1213-d67b-8c21-1ec3eec68b6e",
+		"c06db1da-7c42-8341-d253-04fdd242e598",
+		"f04abc35-cdad-97f5-6aad-6982f9adb163",
+		"d7194895-0b51-17c2-ff9c-c1900ff2c2f6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1561501874023,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "366ee623-e247-661d-fcde-5de8c7137a86",
+			"headers": "Content-Type: application/json\nToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDQxNDgsImV4cCI6MTU2NDA5NjE0OCwidXN1YXJpbyI6eyJsZWdham8iOjIsIm5vbWJyZSI6ImxlYW5kcm8iLCJ0aXBvIjoiYWRtaW4ifX0.o-cFItB2_h7GjT6s9icNbn5j8KTAW_FoC5im1bjZZhg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDQxNDgsImV4cCI6MTU2NDA5NjE0OCwidXN1YXJpbyI6eyJsZWdham8iOjIsIm5vbWJyZSI6ImxlYW5kcm8iLCJ0aXBvIjoiYWRtaW4ifX0.o-cFItB2_h7GjT6s9icNbn5j8KTAW_FoC5im1bjZZhg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/materia",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561509419258,
+			"name": "PUNTO 3",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\":\"Programacion 2\",\n\t\"cuatrimestre\":\"2\",\n\t\"cupos\":\"1\"\n}"
+		},
+		{
+			"id": "6572ed17-e5e0-5b1b-2a9c-14ef7f452a52",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/usuario",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561507548279,
+			"name": "Punto 1",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\":\"damian\",\n\t\"clave\":\"123\",\n\t\"tipo\":\"alumno\"\n}"
+		},
+		{
+			"id": "67763274-1213-d67b-8c21-1ec3eec68b6e",
+			"headers": "Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDc1NTQsImV4cCI6MTU2NDA5OTU1NCwidXN1YXJpbyI6eyJsZWdham8iOjUsIm5vbWJyZSI6ImRhbWlhbiIsInRpcG8iOiJhbHVtbm8iLCJlbWFpbCI6IiIsIm1hdGVyaWFzRGljdGFkYXMiOiIiLCJmb3RvIjoiIn19.oFgE-lz1xdAtl6v62I-mJe1To5-uWHUh2BdaGHqRbpo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDc1NTQsImV4cCI6MTU2NDA5OTU1NCwidXN1YXJpbyI6eyJsZWdham8iOjUsIm5vbWJyZSI6ImRhbWlhbiIsInRpcG8iOiJhbHVtbm8iLCJlbWFpbCI6IiIsIm1hdGVyaWFzRGljdGFkYXMiOiIiLCJmb3RvIjoiIn19.oFgE-lz1xdAtl6v62I-mJe1To5-uWHUh2BdaGHqRbpo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/usuario/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "leandrodamian@hotmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "foto",
+					"value": "Tulips.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "materiasDictadas",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561507944421,
+			"name": "PUNTO 4 MODIFICAR USUARIO",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": []
+		},
+		{
+			"id": "8521a07a-1287-f881-e5e4-0debeaf3e477",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561509419758,
+			"name": "Punto 2 Login",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": [],
+			"rawModeData": "{\n\t\"nombre\":\"mario\",\n\t\"legajo\":\"4\"\n}"
+		},
+		{
+			"id": "c06db1da-7c42-8341-d253-04fdd242e598",
+			"headers": "Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDc1NTQsImV4cCI6MTU2NDA5OTU1NCwidXN1YXJpbyI6eyJsZWdham8iOjUsIm5vbWJyZSI6ImRhbWlhbiIsInRpcG8iOiJhbHVtbm8iLCJlbWFpbCI6IiIsIm1hdGVyaWFzRGljdGFkYXMiOiIiLCJmb3RvIjoiIn19.oFgE-lz1xdAtl6v62I-mJe1To5-uWHUh2BdaGHqRbpo\n",
+			"headerData": [
+				{
+					"key": "Token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDc1NTQsImV4cCI6MTU2NDA5OTU1NCwidXN1YXJpbyI6eyJsZWdham8iOjUsIm5vbWJyZSI6ImRhbWlhbiIsInRpcG8iOiJhbHVtbm8iLCJlbWFpbCI6IiIsIm1hdGVyaWFzRGljdGFkYXMiOiIiLCJmb3RvIjoiIn19.oFgE-lz1xdAtl6v62I-mJe1To5-uWHUh2BdaGHqRbpo",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/inscripcion/4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561507944051,
+			"name": "PUNTO 5 INSCRIPCION A MATERIAS",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": []
+		},
+		{
+			"id": "d7194895-0b51-17c2-ff9c-c1900ff2c2f6",
+			"headers": "Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDkyMTIsImV4cCI6MTU2NDEwMTIxMiwidXN1YXJpbyI6eyJsZWdham8iOjIsIm5vbWJyZSI6ImxlYW5kcm8iLCJ0aXBvIjoiYWRtaW4iLCJlbWFpbCI6ImxlYW5kcm9AbGVhbmRybyIsIm1hdGVyaWFzRGljdGFkYXMiOiJbXCJtYXRlcmlhMVwiLFwibWF0ZXJpYTJcIl0iLCJmb3RvIjoiMi5qcGcifX0.NOqoMIvpuveWZ0pRXaORqpomV3cbp4DJcRsPKFq82Sk\n\n",
+			"headerData": [
+				{
+					"key": "Token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDkyMTIsImV4cCI6MTU2NDEwMTIxMiwidXN1YXJpbyI6eyJsZWdham8iOjIsIm5vbWJyZSI6ImxlYW5kcm8iLCJ0aXBvIjoiYWRtaW4iLCJlbWFpbCI6ImxlYW5kcm9AbGVhbmRybyIsIm1hdGVyaWFzRGljdGFkYXMiOiJbXCJtYXRlcmlhMVwiLFwibWF0ZXJpYTJcIl0iLCJmb3RvIjoiMi5qcGcifX0.NOqoMIvpuveWZ0pRXaORqpomV3cbp4DJcRsPKFq82Sk\n",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/materias/6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561510427975,
+			"name": "PUNTO 7 LISTAR ALUMNOS POR MATERIA",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": []
+		},
+		{
+			"id": "f04abc35-cdad-97f5-6aad-6982f9adb163",
+			"headers": "Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDkzMjksImV4cCI6MTU2NDEwMTMyOSwidXN1YXJpbyI6eyJsZWdham8iOjQsIm5vbWJyZSI6Im1hcmlvIiwidGlwbyI6InByb2Zlc29yIiwiZW1haWwiOiJxcXFxcUBsZWFuZHJvIiwibWF0ZXJpYXNEaWN0YWRhcyI6IltcIm1hdGVyaWExXCIsXCJtYXRlcmlhMlwiXSIsImZvdG8iOiIifX0.lK9NJO5hjaAgrsOOdLarJmAisI0WyAERw49FSEG2M7s\n",
+			"headerData": [
+				{
+					"key": "Token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjE1MDkzMjksImV4cCI6MTU2NDEwMTMyOSwidXN1YXJpbyI6eyJsZWdham8iOjQsIm5vbWJyZSI6Im1hcmlvIiwidGlwbyI6InByb2Zlc29yIiwiZW1haWwiOiJxcXFxcUBsZWFuZHJvIiwibWF0ZXJpYXNEaWN0YWRhcyI6IltcIm1hdGVyaWExXCIsXCJtYXRlcmlhMlwiXSIsImZvdG8iOiIifX0.lK9NJO5hjaAgrsOOdLarJmAisI0WyAERw49FSEG2M7s",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Parcial/Examen/materias",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1561509412432,
+			"name": "PUNTO 6 LISTAR MATERIAS",
+			"description": "",
+			"collectionId": "f9c1bbdd-b98c-ba03-2a3f-c509081546e0",
+			"responses": []
+		}
+	]
+}

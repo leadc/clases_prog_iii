@@ -13,58 +13,56 @@
     $app = new Slim(["settings" => $config]);
 
     /**
-     * Login de usuario
-     * @param nombre nombre de usuario
-     * @param clave clave del usuario
-     * @param sexo sexo del usuario
-     * @return usuario Devuelve los datos del usuario logueado
-     * @return token Devuelve un token de acceso unico para el usuario en el Header Token
+     * PUNTO 2
      */
     $app->post("/login[/]", API::class.":LoginUsuario")
-    ->add(JWTMiddleware::class.":AccesoLogin")
-    ->add(PermisosMiddleware::class.":LogAccesos");
+    ->add(JWTMiddleware::class.":AccesoLogin");
+    //->add(PermisosMiddleware::class.":LogAccesos");
 
     /**
-     * Alta de usuario
-     * @param nombre nombre de usuario
-     * @param clave clave del usuario
-     * @param sexo sexo del usuario
-     * @param perfil (opcional) perfil del usuario, en caso de no enviarlo se le pone 'usuario'
-     * @return usuario Devuelve los datos del usuario creado
+     * PUNTO 1
      */
-    $app->post("/usuario[/]", API::class.":AltaUsuario")
-    ->add(JWTMiddleware::class.":AccesoCrearUsuario")
-    ->add(PermisosMiddleware::class.":LogAccesos");
+    $app->post("/usuario[/]", API::class.":AltaUsuario");   
+    //->add(JWTMiddleware::class.":AccesoCrearUsuario");    
+    //->add(PermisosMiddleware::class.":LogAccesos");
 
     /**
-     * Listar usuarios
-     * @return listausuarios Devuelve un listado de usuarios en caso de ser administrador o solo un "hola" en caso de no serlo
+     * PUNTO 3
      */
-    $app->get("/usuario[/]", API::class.":ListarUsuarios")
-    ->add(PermisosMiddleware::class.":AccesoListaUsuarios")
-    ->add(JWTMiddleware::class.":AccesoGeneral")
-    ->add(PermisosMiddleware::class.":LogAccesos");
+    $app->post("/materia[/]", API::class.":NuevaMateria")
+    ->add(PermisosMiddleware::class.":AccesoAdministradores")
+    ->add(JWTMiddleware::class.":AccesoGeneral");
+    //->add(PermisosMiddleware::class.":LogAccesos");
     
     /**
-     * Registrar Compra
-     * @param articulo nombre del artículo a comprar
-     * @param fecha fecha de la compra
-     * @param precio precio de la compra
-     * @return compra Devuelve los datos de la compra guardada
+     * PUNTO 4 MODIFICAR USUARIO
      */
-    $app->post("/Compra[/]", API::class.":NuevaCompra")
-    ->add(JWTMiddleware::class.":AccesoGeneral")
-    ->add(PermisosMiddleware::class.":LogAccesos");
+    $app->post("/usuario/{legajo}[/]", API::class.":ModificarUsuario")
+    ->add(JWTMiddleware::class.":AccesoGeneral");
+    //->add(PermisosMiddleware::class.":LogAccesos");
 
     /**
-     * Listar Compras
-     * @return compras Devuelve un listado de las compras del usuario o general en caso de que sea administrador
+     * PUNTO 5 INSCRIPCION A MATERIA
      */
-    $app->get("/Compra[/]", API::class.":ListarCompras")
-    ->add(JWTMiddleware::class.":AccesoGeneral")
-    ->add(PermisosMiddleware::class.":LogAccesos");
+    $app->post("/inscripcion/{idMateria}", API::class.":InscripcionMateria")
+    ->add(JWTMiddleware::class.":AccesoGeneral");
+    //->add(PermisosMiddleware::class.":LogAccesos");
+
+    /**
+     * PUNTO 6 LISTAR MATERIAS
+     */
+    $app->get("/materias[/]", API::class.":ListarMaterias")
+    ->add(JWTMiddleware::class.":AccesoGeneral");
+    //->add(PermisosMiddleware::class.":LogAccesos");
     
-    // Ejemplo de como buscar las imágenes luego de subirlas sin importar su extensión
+     /**
+     * PUNTO 7 LISTAR ALUMNOS POR MATERIA
+     */
+    $app->get("/materias/{id}[/]", API::class.":ListarAlumnosPorMateria")
+    ->add(JWTMiddleware::class.":AccesoGeneral");
+    //->add(PermisosMiddleware::class.":LogAccesos");
+    
+    // PUN
     $app->get("/test[/]", function ($request, $response){
         var_dump( glob("./IMGCompras/17 - CARAMELO.*"));
     });
